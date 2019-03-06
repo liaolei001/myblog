@@ -4,10 +4,11 @@
  */
 
 function initWidget(waifuPath, apiPath) {
-	if (screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000)) return;
-	localStorage.removeItem("waifu-display");
+	//if (screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000)) return;
+	if (screen.width <= 768) return;
+	//localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
-	$("body").append(`<div id="waifu">
+	$("body").append(`<div id="waifu" style="height:0">
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="300" height="300"></canvas>
 			<div id="waifu-tool">
@@ -20,6 +21,7 @@ function initWidget(waifuPath, apiPath) {
 				<span class="fa fa-lg fa-times"></span>
 			</div>
 		</div>`);
+	$("#waifu").animate({ height: 300 }, 500);
 	$("#waifu-tool .fa-comment").click(showHitokoto);
 	$("#waifu-tool .fa-paper-plane").click(function() {
 		var s = document.createElement("script");
@@ -37,9 +39,9 @@ function initWidget(waifuPath, apiPath) {
 		window.open("https://github.com/stevenjoezhang/live2d-widget");
 	});
 	$("#waifu-tool .fa-times").click(function() {
-		localStorage.setItem("waifu-display", new Date().getTime());
+		//localStorage.setItem("waifu-display", new Date().getTime());
 		showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
-		$("#waifu").animate({ bottom: -500 }, 3000, function() {
+		$("#waifu").animate({ height: 0 }, 500, function() {
 			$("#waifu").hide();
 		});
 	});
