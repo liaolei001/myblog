@@ -35,9 +35,6 @@ function initWidget(waifuPath, apiPath) {
 		window.Live2D.captureName = "photo.png";
 		window.Live2D.captureFrame = true;
 	});
-	$("#waifu-tool .fa-info-circle").click(function() {
-		window.open("https://github.com/stevenjoezhang/live2d-widget");
-	});
 	$("#waifu-tool .fa-times").click(function() {
 		//localStorage.setItem("waifu-display", new Date().getTime());
 		showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
@@ -46,7 +43,6 @@ function initWidget(waifuPath, apiPath) {
 		});
 	});
 	var re = /x/;
-	console.log(re);
 	re.toString = function() {
 		showMessage("哈哈，你打开了控制台，是想要看看我的秘密吗？", 6000, 9);
 		return "";
@@ -182,7 +178,7 @@ function initWidget(waifuPath, apiPath) {
 		localStorage.setItem("modelId", modelId);
 		if (modelTexturesId === undefined) modelTexturesId = 0;
 		localStorage.setItem("modelTexturesId", modelTexturesId);
-		loadlive2d("live2d", `${apiURL}/get/?id=${modelId}-${modelTexturesId}`, console.log("live2d", `模型 ${modelId}-${modelTexturesId} 加载完成`));
+		loadlive2d("live2d", `${apiURL}/get/?id=${modelId}-${modelTexturesId}`, console.log("小可爱", `模型 ${modelId}-${modelTexturesId} 加载完成`));
 	}
 
 	function loadRandModel() {
