@@ -19,7 +19,7 @@ VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、
 
 vultr注册地址:[http://www.vultr.com](https://www.vultr.com/?ref=8046196)（全球15个服务器位置可选，KVM框架，最低2.5美元/月。）
 
-![](https://www.vultr.com/media/banner_1.png)
+![](http://www.vultr.com/dist/img/brand/banner_1.png)
 
 虽然是英文界面，但是现在的浏览器都有网页翻译功能，鼠标点击右键，选择网页翻译即可翻译成中文。
 

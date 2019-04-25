@@ -5,7 +5,7 @@
 # Site
 title: 暖阳如初
 description:
-keywords:
+keywords: 暖阳如初,博客,技术,java
 author: 廖磊
 language: zh-Hans
 timezone:
@@ -37,7 +37,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
