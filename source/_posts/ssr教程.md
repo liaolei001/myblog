@@ -55,7 +55,7 @@ vultr注册地址:[http://www.vultr.com](https://www.vultr.com/?ref=8046196)（�
 #### 选择vps操作系统时，建议选择centos6，可以省去更换内核的操作
 
 ![](https://raw.githubusercontent.com/Alvin9999/crp_up/master/pac%E6%95%99%E7%A8%8B04.png)
-## **第二步：部署VPS服务器**
+### **第二步：部署VPS服务器**
 
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
@@ -82,7 +82,7 @@ vultr注册地址:[http://www.vultr.com](https://www.vultr.com/?ref=8046196)（�
 
 连接国外ip即服务器时，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买的服务器系统的密码。
 
-### 如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被封的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。
+** 如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被封的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。**
 
 [![](https://raw.githubusercontent.com/Alvin9999/PAC/master/xshell14.png)](https://raw.githubusercontent.com/Alvin9999/PAC/master/xshell14.png)
 
@@ -108,7 +108,7 @@ wget --no-check-certificate https://freed.ga/github/shadowsocksR.sh; bash shadow
 ![](https://www.baishitou.cn/wp-content/uploads/2018/03/QQ%E6%88%AA%E5%9B%BE20180802123036.jpg)
 这张图注意保存  
 因为 Vultr 的所有机房都位于国外，当晚上上网高峰期来临时，在连接速度上会比较慢，所以我们有必要安装一些程序来加速连接速度。本次推荐安装的是锐速加速软件，个人认为目前在提速方面，相比于最新的 Google BBR 拥塞控制算法，锐速尚有优势。
-###  锐速安装
+###  第三步：锐速安装
 用Xshell连接服务器后，执行下面命令。
 
 ```
