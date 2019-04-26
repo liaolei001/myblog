@@ -1,9 +1,12 @@
 title: 使用vps搭建ssr
 tags:
   - 网络
+  - vps
+  - SSR
+  - 教程
 categories: []
 author: 廖磊
-date: 2019-03-04 23:05:00
+date: 2019-04-023 21:05:00
 ---
 
 ## **教程很简单，整个教程分三步**：
